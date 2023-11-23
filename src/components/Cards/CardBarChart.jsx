@@ -17,20 +17,20 @@ export default function CardBarChart() {
         ],
         datasets: [
           {
-            label: "Booked Slots",
-            backgroundColor: "#0C7489",
-            borderColor: "#0C7489",
+            label: new Date().getFullYear(),
+            backgroundColor: "#blue",
+            borderColor: "#ed64a6",
             data: [30, 78, 56, 34, 100, 45, 13],
             fill: false,
-            barThickness: 40,
+            barThickness: 20,
           },
           {
-            label: "Unbooked Slots",
+            label: new Date().getFullYear() - 1,
             fill: false,
-            backgroundColor: "#8B0000",
-            borderColor: "#8B0000",
+            backgroundColor: "#0C7489",
+            borderColor: "#4c51bf",
             data: [27, 68, 86, 74, 10, 4, 87],
-            barThickness: 40,
+            barThickness: 20,
           },
         ],
       },
@@ -105,10 +105,10 @@ export default function CardBarChart() {
           <div className="flex flex-wrap items-center">
             <div className="relative w-full max-w-full flex-grow flex-1">
               <h6 className="uppercase text-blueGray-400 mb-1 text-xs font-semibold">
-                Total Slots
+                Performance
               </h6>
               <h2 className="text-blueGray-700 text-xl font-semibold">
-                
+                buildings
               </h2>
             </div>
           </div>

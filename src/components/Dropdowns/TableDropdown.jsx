@@ -27,7 +27,7 @@ const NotificationDropdown = () => {
         ref={btnDropdownRef}
         
       >
-        {/* <button>
+        <button>
 
         <FaPen />
         </button>
@@ -38,7 +38,7 @@ const NotificationDropdown = () => {
         <button>
         <FaEye />
 
-        </button> */}
+        </button>
       </div>
       <div
         ref={popoverDropdownRef}

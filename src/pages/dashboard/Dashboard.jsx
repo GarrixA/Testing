@@ -1,64 +1,72 @@
 import React from "react";
-
-// components
-
 import CardLineChart from "../../components/Cards/CardLineChart.jsx";
 import CardBarChart from "../../components/Cards/CardBarChart.jsx";
-import CardPageVisits from "../../components/Cards/CardPageVisits.jsx";
 import CardStats from "../../components/Cards/CardStats.jsx";
+
 
 export default function Dashboard() {
   return (
     <>
-    <div>
+    <div className=" relative bottom-16">
             {/* Card stats */}
-            <div className="flex relative bottom-14">
+            <div className="flex flex-wrap">
               <div className="w-full lg:w-6/12 xl:w-3/12 px-4">
                 <CardStats
-                  statSubtitle="Total Slots"
+                  statSubtitle="BUILDINGS"
                   statTitle="350,897"
                   statArrow="up"
                   statPercent="3.48"
                   statPercentColor="text-emerald-500"
                   statDescripiron="Since last month"
                   statIconName="far fa-chart-bar"
-                  statIconColor="bg-gray-500"
+                  statIconColor="bg-red-500"
                 />
               </div>
               <div className="w-full lg:w-6/12 xl:w-3/12 px-4">
                 <CardStats
-                  statSubtitle="Total Booked"
+                  statSubtitle="SLOTS"
                   statTitle="2,356"
                   statArrow="down"
                   statPercent="3.48"
                   statPercentColor="text-red-500"
                   statDescripiron="Since last week"
                   statIconName="fas fa-chart-pie"
-                  statIconColor="bg-red-800"
+                  statIconColor="bg-orange-500"
                 />
               </div>
               <div className="w-full lg:w-6/12 xl:w-3/12 px-4">
                 <CardStats
-                  statSubtitle="Remaining Slots"
+                  statSubtitle="BOOKED SLOTS"
                   statTitle="924"
                   statArrow="down"
                   statPercent="1.10"
                   statPercentColor="text-orange-500"
                   statDescripiron="Since yesterday"
                   statIconName="fas fa-users"
-                  statIconColor="bg-green-500"
+                  statIconColor="bg-pink-500"
+                />
+              </div>
+              <div className="w-full lg:w-6/12 xl:w-3/12 px-4">
+                <CardStats
+                  statSubtitle="REMAINING SLOTS"
+                  statTitle="49,65%"
+                  statArrow="up"
+                  statPercent="12"
+                  statPercentColor="text-emerald-500"
+                  statDescripiron="Since last month"
+                  statIconName="fas fa-percent"
+                  statIconColor="bg-lightBlue-500"
                 />
               </div>
             </div>
           </div>
-      <div className="flex flex-wrap">
-        <div className="w-full xl:w-4/12 px-4  h-[65vh]">
+    
+      <div className="flex flex-wrap relative bottom-12">
+        <div className="w-full   h-[65vh]    xl:w-8/12 mb-12 xl:mb-0 px-4">
           <CardBarChart />
         </div>
-      </div>
-      <div className="flex flex-wrap mt-4">
-        <div className="w-full xl:w-8/12 mb-12 xl:mb-0 px-4">
-          <CardPageVisits />
+        <div className="w-full xl:w-4/12 px-4  h-[65vh]">
+          <CardLineChart />
         </div>
       </div>
     </>
