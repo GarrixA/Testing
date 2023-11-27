@@ -12,6 +12,10 @@ export default function Sidebar() {
   const toggleCollapse = () => {
     setCollapseShow(!collapseShow);
   };
+  const handleLogout = () => {
+    localStorage.removeItem('token'); 
+    navigate("../../../../../"); 
+  };
 
   const toggleModal = () => {
     setShowModal(!showModal);
@@ -24,7 +28,7 @@ export default function Sidebar() {
           <button
             className="cursor-pointer  text-black opacity-0 md:hidden px-3 py-1 text-xl leading-none bg-transparent rounded border border-solid border-transparent"
             type="button"
-            onClick={() => setCollapseShow("bg-black m-2 py-3 px-6")}
+            onClick={() => setCollapseShow("bg-white m-2 py-3 px-6")}
           >
             <i className="fas fa-bars"></i>
           </button>
@@ -142,7 +146,7 @@ export default function Sidebar() {
                       ? "text-lightBlue-500 hover:text-lightBlue-600"
                       : "text-blueGray-700 hover:text-blueGray-500")
                   }
-                  to=""
+                  to="/"
                 >
                   <i
                     className={
@@ -152,7 +156,7 @@ export default function Sidebar() {
                         : "text-blueGray-300")
                     }
                   ></i>{" "}
-                  Logout
+                 <button onClick={handleLogout}>LOGOUT</button> 
                 </Link>
               </li>
             </ul>
