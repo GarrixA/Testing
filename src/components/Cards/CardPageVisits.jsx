@@ -55,9 +55,6 @@ const CardPageVisits = () => {
               >
                 Add Building
               </button>
-               <h1>gggggggggggggggggggggggggggggggggg</h1>
-               <h1>gggggggggggggggggggggggggggggggggg</h1>
-               <h1>gggggggggggggggggggggggggggggggggg</h1>
               </div>
             </div>
             <div className="relative w-full px-4 max-w-full flex-grow flex-1 text-right">
@@ -163,9 +160,9 @@ const CardPageVisits = () => {
                     View More Details
                 </button>
                 <button className="bg-red-500 ml-10 text-white px-4 py-2 rounded-md hover:bg-orange-600 focus:outline-none focus:ring focus:border-blue-300"
-                onClick={toggleModal}
+                onClick={handleCancel}
                 >
-                    cancer
+                    Cancel
                 </button>
                     </div>
 
@@ -197,7 +194,7 @@ const CardPageVisits = () => {
                 <button className="bg-red-500 ml-10 text-white px-4 py-2 rounded-md hover:bg-orange-600 focus:outline-none focus:ring focus:border-blue-300"
                 onClick={handleCancel}
                 >
-                    cancer
+                    cancel
                 </button>
                     </div>
 
@@ -229,7 +226,7 @@ const CardPageVisits = () => {
                 <button className="bg-red-500 ml-10 text-white px-4 py-2 rounded-md hover:bg-orange-600 focus:outline-none focus:ring focus:border-blue-300"
                 onClick={handleCancel}
                 >
-                    cancer
+                    cancel
                 </button>
                     </div>
 
@@ -261,7 +258,7 @@ const CardPageVisits = () => {
                 <button className="bg-red-500 ml-10 text-white px-4 py-2 rounded-md hover:bg-orange-600 focus:outline-none focus:ring focus:border-blue-300"
                 onClick={handleCancel}
                 >
-                    cancer
+                    cancel
                 </button>
                     </div>
 
@@ -293,7 +290,7 @@ const CardPageVisits = () => {
                 <button className="bg-red-500 ml-10 text-white px-4 py-2 rounded-md hover:bg-orange-600 focus:outline-none focus:ring focus:border-blue-300"
                 onClick={handleCancel}
                 >
-                    cancer
+                    cancel
                 </button>
                     </div>
 
