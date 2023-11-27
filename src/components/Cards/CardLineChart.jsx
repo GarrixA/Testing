@@ -16,21 +16,21 @@ const CardLineChart = () => {
               <div>
                 <MessageNotification
                   sender="Leon"
-                  message="Hello, how are you?"
+                  message="Hello, how it works?"
                   timestamp="2 hours ago"
                 />
               </div>
               <div>
                 <MessageNotification
                   sender="Bolingo"
-                  message="Hello, how are you?"
+                  message="Hello, how you made it?"
                   timestamp="2 hours ago"
                 />
               </div>
               <div>
                 <MessageNotification
                   sender="Garix"
-                  message="Hello, how are you?"
+                  message="Hello, how you are gonna help me ?"
                   timestamp="2 hours ago"
                 />
               </div>
